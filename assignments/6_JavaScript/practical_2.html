@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mathematics operation</title>
+    <style>
+        .operations {
+            border: 2px solid black;
+            height: auto;
+            width: 400px;
+            margin: 150px auto;
+            padding: 20px;
+        }
+
+        .row {
+            display: flex;
+            padding: 5px 0px;
+        }
+
+        .col {
+            flex: 1;
+        }
+
+        p {
+            text-align: center;
+        }
+
+        input[type="text"] {
+            height: 20px;
+            width: 200px;
+        }
+
+        button {
+            height: 30px;
+            width: 50px;
+            margin: 2px;
+            font-size: 20px;
+        }
+
+        span {
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="operations">
+        <p>Maths Operations</p>
+        <form action="">
+            <div class="row">
+                <div class="col">
+                    <label for="">Enter 1st number : </label>
+                </div>
+                <div class="col">
+                    <input type="text" name="" id="num1">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label for="">Enter 2nd number : </label>
+                </div>
+                <div class="col">
+                    <input type="text" name="" id="num2">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <button id="add" onclick="return add_value()">+</button>
+                    <button id="subs" onclick="return sub_value()">-</button>
+                    <button id="multi" onclick="return multi_value()">*</button>
+                    <button id="divide" onclick="return divide_value()">/</button>
+                    <button id="modules" onclick="return mod_value()">%</button>
+                </div>
+                <div class="col">
+                    <p>Answer is : <span id="msg1"></span></p>
+                </div>
+            </div>
+        </form>
+    </div>
+
+
+    <script>
+        function add_value() {
+            let num1 = document.getElementById("num1").value;
+            let num2 = document.getElementById("num2").value;
+
+            let addition = Number(num1) + Number(num2)
+            document.getElementById("msg1").innerHTML = addition
+            return false
+        }
+        function sub_value() {
+            let num1 = document.getElementById("num1").value;
+            let num2 = document.getElementById("num2").value;
+
+            let subs = Number(num1) - Number(num2)
+            document.getElementById("msg1").innerHTML = subs
+            return false
+        }
+        function multi_value() {
+            let num1 = document.getElementById("num1").value;
+            let num2 = document.getElementById("num2").value;
+
+            let multi = Number(num1) * Number(num2)
+            document.getElementById("msg1").innerHTML = multi
+            return false
+        }
+        function divide_value() {
+            let num1 = document.getElementById("num1").value;
+            let num2 = document.getElementById("num2").value;
+
+            let divide = Number(num1) / Number(num2)
+            document.getElementById("msg1").innerHTML = divide
+            return false
+        }
+        function mod_value() {
+            let num1 = document.getElementById("num1").value;
+            let num2 = document.getElementById("num2").value;
+
+            let mod = Number(num1) % Number(num2)
+            document.getElementById("msg1").innerHTML = mod
+            return false
+        }
+    </script>
+</body>
+
+</html>

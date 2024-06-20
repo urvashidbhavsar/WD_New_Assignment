@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Josefin+Sans&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.btn {
+    padding: 10px 20px;
+    border: 1px solid transparent;
+}
+
+.pdd-2 {
+    padding: 20px 0px;
+}
+
+.pdd-5 {
+    padding: 50px 0px;
+}
+
+.container {
+    max-width: 1400px;
+    margin: auto;
+    padding: 0px 10px;
+}
+
+.topheader .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.topheader .navbar .logo h1 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 24px;
+    letter-spacing: -0.06em;
+    color: #1D2830;
+}
+
+.topheader .nav {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+.topheader .nav ul {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.topheader .nav ul li {
+    padding: 5px;
+}
+
+.topheader .nav ul li a {
+    color: #1D2830;
+}
+
+.topheader .nav ul li span {
+    font-size: 10px;
+}
+
+.topheader .account {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.topheader .account a {
+    color: #1D2830;
+}
+
+.topheader .account button {
+    background: #ECE6FF;
+    border-radius: 4px;
+}
+
+.topheader .bars {
+    display: none;
+}
+
+/* ======================== */
+.homepage .homeContent {
+    text-align: center;
+    margin: auto;
+}
+
+.homepage .homeContent .toptitle {
+    display: flex;
+    align-items: center;
+    background: #F2F9EB;
+    border-radius: 100px;
+    width: fit-content;
+    margin: auto;
+    padding-right: 10px;
+}
+
+.homepage .homeContent .toptitle .title1 {
+    background: #81C43B;
+    border-radius: 100px;
+    font-size: 16px;
+    line-height: 16px;
+    padding: 4px 7px;
+}
+
+.homepage .homeContent .toptitle .title2 {
+    padding-left: 7px;
+}
+
+.homepage .homeContent .homeText h1 {
+    line-height: 72px;
+    font-size: calc(2.5vw + 1.5rem);
+    font-weight: 600;
+    width: 760px;
+    margin: auto;
+    padding: 21px 0px;
+}
+
+.homepage .homeContent .homeText p {
+    width: 505px;
+    line-height: 24px;
+    margin: auto;
+    padding-bottom: 20px;
+}
+
+.homepage .homeContent .homeText .form {
+    display: flex;
+    justify-content: center;
+}
+
+.homepage .homeContent .homeText input {
+    width: 319px;
+    height: 50px;
+    border-radius: 4px 0px 0px 4px;
+    border: 1px solid #E1E5EA;
+    padding: 0px 20px;
+}
+
+.homepage .homeContent .homeText button {
+    width: 164px;
+    height: 50px;
+    background-color: #794cff;
+    border-radius: 0px 4px 4px 0px;
+    border: 1px solid #794cff;
+
+}
+
+.homepage .homeContent .homeimg {
+    padding: 40px 0px;
+}
+
+.homepage .homeContent .homeimg img {
+    height: 650px;
+    width: 950px;
+    filter: drop-shadow(0 0 20px #1D2830);
+}
+
+.homepage .homeContent .btmcontent {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.homepage .brands {
+    padding: 50px 0px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-items: center;
+    gap: 20px;
+}
+
+.homepage .brands img {
+    height: auto;
+    max-width: 100%;
+}
+
+.chatSec {
+    background-color: #FBFAFE;
+}
+
+.chatSec .flexcontent {
+    padding: 70px 0;
+    display: flex;
+    gap: 30px;
+}
+
+.chatSec .flexcontent .leftCon {
+    flex: 1;
+}
+
+.chatSec .flexcontent .leftCon img {
+    height: auto;
+    max-width: 100%;
+}
+
+.chatSec .flexcontent .rightCon {
+    flex: 1;
+    display: grid;
+}
+
+.chatSec .flexcontent .rightCon .box {
+    padding: 30px;
+    width: 500px;
+}
+
+.chatSec .flexcontent .rightCon .box1 {
+    background-color: #F6F3FC;
+    border-left: 5px solid #794CFF;
+}
+
+.chatSec .flexcontent .rightCon h3 {
+    color: #4E5A65;
+    padding-bottom: 15px;
+}
+
+.chatSec .flexcontent .rightCon .box2,
+.box3 {
+    border-bottom: 1px solid #F0EBFA;
+}
+
+.chatSec .flexcontent .rightCon p {
+    line-height: 30px;
+}

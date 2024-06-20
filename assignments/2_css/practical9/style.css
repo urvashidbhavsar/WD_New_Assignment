@@ -1,0 +1,26 @@
+body {
+    background: linear-gradient(60deg, #eded22, #8e6210);
+}
+
+.setCircle {
+    height: 200px;
+    width: 200px;
+    margin: 245px auto;
+}
+
+.circle {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    border: 3px solid yellow;
+    background-color: yellow;
+    box-shadow: 0 0 5px gainsboro;
+}
+
+.innerCircle {
+    height: 180px;
+    width: 180px;
+    border-radius: 50%;
+    border: 3px solid orangered;
+    background-color: orangered;
+}

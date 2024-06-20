@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hide and Show Password</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .UserForm {
+            border: 1px solid black;
+            padding: 20px;
+            width: fit-content;
+            margin: auto;
+        }
+
+        .field {
+            display: flex;
+        }
+
+        input {
+            height: 24.5px;
+            width: 300px;
+            border: 1px solid gray;
+            padding: 5.5px;
+            font-size: 15px;
+            letter-spacing: 1px;
+        }
+
+        input:focus-visible {
+            outline: none;
+        }
+
+        button {
+            padding: 10px;
+            border: 1px solid gray;
+            background-color: transparent;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+
+    <div class="UserForm">
+        <h1>Hide and Show Password</h1>
+        <form action="#">
+            <div class="field">
+                <div>
+                    <input type="password" name="" id="pass">
+                </div>
+                <div>
+                    <button class="btn" id="btn">Show</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <script>
+        $(document).ready(function () {
+            $("#btn").click(function (e) {
+                e.preventDefault(); // Prevent the form from submitting
+
+                if ($("#pass").attr("type") === "password") {
+                    $("#pass").attr("type", "text");
+                    $(this).text("Hide");
+                } else {
+                    $("#pass").attr("type", "password");
+                    $(this).text("Show");
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        * {
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-700">
+    <div class="container my-[200px] mx-auto">
+        <div class="slider relative">
+            <div class="slide h-[50px] w-[300px] bg-teal-500 flex items-center justify-center mx-auto">Slide 1</div>
+
+            <div class="leftArr absolute top-0 left-0 text-[30px] text-white">&lt;</div>
+            <div class="RightArr absolute top-0 right-0 text-[30px] text-white">&gt;</div>
+        </div>
+        <div class="flex gap-2 mt-[100px] justify-center">
+            <div class="dot h-[5px] w-[30px] bg-white"></div>
+            <div class="dot h-[5px] w-[30px] bg-gray-500"></div>
+            <div class="dot h-[5px] w-[30px] bg-gray-500"></div>
+        </div>
+    </div>
+</body>
+
+</html>

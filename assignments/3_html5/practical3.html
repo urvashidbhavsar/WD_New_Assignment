@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        canvas {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <canvas id="mycanvas" height="500px" width="800px"></canvas>
+
+    <script>
+        const canvas = document.getElementById("mycanvas");
+        const drw = canvas.getContext("2d");
+
+        drw.beginPath();
+        drw.arc(150, 150, 100, 0, 2 * Math.PI);
+        drw.fillStyle = "pink";
+        drw.fill();
+        drw.lineWidth = 4;
+        drw.strokeStyle = "blue";
+        drw.stroke();
+
+        drw.fillStyle = "orange";
+        drw.fillRect(300, 150, 300, 100);
+
+        function roundedRect(x, y, w, h, rd) {
+            const canvas = document.getElementById("mycanvas");
+            const drw = canvas.getContext("2d");
+            var r = x + w;
+            var b = y + h;
+            drw.beginPath();
+            drw.strokeStyle = "green";
+            drw.lineWidth = "4";
+            drw.moveTo(x + rd, y);
+            drw.lineTo(r - rd, y);
+            drw.quadraticCurveTo(r, y, r, y + rd);
+            drw.lineTo(r, y + h - rd);
+            drw.quadraticCurveTo(r, b, r - rd, b);
+            drw.lineTo(x + rd, b);
+            drw.quadraticCurveTo(x, b, x, b - rd);
+            drw.lineTo(x, y + rd);
+            drw.quadraticCurveTo(x, y, x + rd, y);
+            drw.stroke();
+        }
+        roundedRect(150, 300, 150, 150, 10)
+    </script>
+</body>
+
+</html>

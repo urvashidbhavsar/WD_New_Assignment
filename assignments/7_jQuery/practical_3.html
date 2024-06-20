@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>slide move</title>
+    <style>
+        .setDiv {
+            height: 400px;
+            width: 800px;
+            padding: 20px;
+            margin: 100px auto;
+            text-align: center;
+        }
+
+        .btn {
+            background-color: yellowgreen;
+            color: white;
+            border: 1px solid yellowgreen;
+            padding: 10px 30px;
+            box-shadow: 0 0 5px 3px rgb(220, 219, 219);
+            border-radius: 4px;
+        }
+
+        .slide {
+            width: 100%;
+            background-color: #79ae0d;
+            height: 300px;
+            border-radius: 0 0 10px 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+
+    <div class="setDiv">
+        <button class="btn btn1">slide Up</button>
+        <button class="btn btn2">slide Down</button>
+        <button class="btn btn3">slide Toggle</button>
+
+        <hr>
+
+        <div class="slide"></div>
+    </div>
+
+    <script>
+        $(document).ready(function () {
+            $(".btn1").click(function () {
+                $(".slide").slideUp(1000)
+            })
+            $(".btn2").click(function () {
+                $(".slide").slideDown(1000)
+            })
+            $(".btn3").click(function () {
+                $(".slide").slideToggle(1000)
+            })
+        })
+    </script>
+</body>
+
+</html>

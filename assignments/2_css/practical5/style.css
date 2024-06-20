@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.GridSec {
+    padding: 60px 0px;
+    margin: 0px 100px;
+}
+
+.GridSec .gridbox {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.GridSec .gridbox .box {
+    border: 1px solid black;
+}
+
+.GridSec .gridbox .box .profile {
+    height: 200px;
+    width: 100%;
+    background-color: gray;
+    color: white;
+    display: grid;
+    place-content: center;
+    font-size: 25px;
+}
+
+.GridSec .gridbox .box .text {
+    padding: 20px;
+}
+
+.GridSec .gridbox .box .tfoot {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0px;
+}
+
+.GridSec .gridbox .box .tfoot .btns {
+    display: flex;
+}
+
+.GridSec .gridbox .box .tfoot button {
+    padding: 5px 10px;
+    background-color: transparent;
+}

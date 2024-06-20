@@ -1,0 +1,50 @@
+ body {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     height: 100vh;
+     background-color: #f0f0f0;
+ }
+
+ .circle {
+     width: 50px;
+     height: 50px;
+     background-color: #00f;
+     border-radius: 50%;
+     transition: all 1s ease;
+ }
+
+ .circle:hover {
+     width: 200px;
+     height: 200px;
+     background-color: rgba(0, 0, 255, 0.8);
+ }
+
+ .circle::before {
+     content: '';
+     position: absolute;
+     width: 50px;
+     height: 50px;
+     background-color: rgba(0, 0, 255, 0.2);
+     border-radius: 50%;
+     transition: all 1s ease;
+     animation: fade 1s infinite;
+ }
+
+ .circle:hover::before {
+     width: 200px;
+     height: 200px;
+     background-color: rgba(0, 0, 255, 0.1);
+ }
+
+ @keyframes fade {
+     0% {
+         transform: scale(0.5);
+         opacity: 1;
+     }
+
+     100% {
+         transform: scale(1);
+         opacity: 0;
+     }
+ }
